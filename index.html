@@ -35,7 +35,7 @@
     .site-title {
       text-align: center;
       font-size: 28px;
-      margin: 30px 0 20px;
+      margin: 30px auto 20px;
       font-weight: bold;
       background-color: #4b2e2e;
       color: white;
@@ -58,11 +58,19 @@
       color: #4b2e2e;
       padding: 20px;
       font-size: 18px;
-      margin: 12px 0;
+      margin: 12px 0 5px;
       width: 80%;
       max-width: 400px;
       text-decoration: none;
       text-align: center;
+    }
+
+    .main-desc {
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 10px;
+      text-align: center;
+      max-width: 400px;
     }
 
     .footer-links {
@@ -82,33 +90,75 @@
     .footer-links a:hover {
       text-decoration: underline;
     }
+
+    .header-links {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .header-links a {
+      font-size: 12px;
+      color: #000;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+
+    .header-links a:hover {
+      text-decoration: underline;
+    }
   </style>
+  <script>
+    function showAlert() {
+      alert("تنبيه: جاري تجهيز الخدمة ورفعها على الموقع");
+    }
+  </script>
 </head>
 <body>
 
+  <!-- روابط علوية -->
+  <div class="header-links">
+    <a href="https://ansarii212.github.io/Master/">الصفحة الرئيسية</a> |
+    <a href="https://ansarii212.github.io/exams/">مراجعات الاختبارات</a> |
+    <a href="https://ansarii212.github.io/cert/">شهادة التقدير</a>
+  </div>
+
   <!-- الصف العلوي -->
   <div class="top-nav">
-    <a href="index.html" class="nav-button">الصفحة الرئيسية</a>
-    <a href="exams.html" class="nav-button">خدمة مراجعات الاختبارات</a>
-    <a href="certificate.html" class="nav-button">خدمة إنشاء شهادات التقدير</a>
-    <a href="qrcode.html" class="nav-button">خدمة تحويل أي ملف إلى qrcode</a>
-    <a href="madrasati.html" class="nav-button">خدمة تحضير مدرستي</a>
+    <a href="https://ansarii212.github.io/Master/" class="nav-button">الصفحة الرئيسية</a>
+    <a href="https://ansarii212.github.io/exams/" class="nav-button">خدمة مراجعات الاختبارات</a>
+    <a href="https://ansarii212.github.io/cert/" class="nav-button">خدمة إنشاء شهادات التقدير</a>
+    <a href="javascript:void(0);" onclick="showAlert()" class="nav-button">خدمة تحويل أي ملف إلى qrcode</a>
+    <a href="javascript:void(0);" onclick="showAlert()" class="nav-button">خدمة تحضير مدرستي</a>
   </div>
 
   <!-- اسم الموقع -->
-  <div class="centered">
-    <h1 class="site-title">موقع خدمات المعلم و الطالب</h1>
-  </div>
+  <h1 class="site-title">موقع خدمات المعلم و الطالب</h1>
 
   <!-- الأزرار الرئيسية -->
   <div class="main-buttons">
-    <a href="exams.html" class="main-button">خدمة مراجعات الاختبارات</a>
-    <a href="certificate.html" class="main-button">خدمة إنشاء شهادات التقدير</a>
-    <a href="qrcode.html" class="main-button">خدمة تحويل أي ملف إلى qrcode</a>
-    <a href="madrasati.html" class="main-button">خدمة تحضير مدرستي</a>
+
+    <a href="https://ansarii212.github.io/exams/" class="main-button">خدمة مراجعات الاختبارات</a>
+    <div class="main-desc">أدلة شاملة ومراجعات نهائية لكل الصفوف والمواد التعليمية بطريقة منظمة وسهلة.</div>
+
+    <a href="https://ansarii212.github.io/cert/" class="main-button">خدمة إنشاء شهادات التقدير</a>
+    <div class="main-desc">أنشئ شهادة تقدير فاخرة للطلاب والطالبات والمعلمين بضغطة زر.</div>
+
+    <a href="javascript:void(0);" onclick="showAlert()" class="main-button">خدمة تحويل أي ملف إلى qrcode</a>
+    <div class="main-desc">حوّل ملفاتك وروابطك التعليمية إلى QR لمشاركتها بسهولة مع الطلاب.</div>
+
+    <a href="javascript:void(0);" onclick="showAlert()" class="main-button">خدمة تحضير مدرستي</a>
+    <div class="main-desc">خدمة قادمة لجدولة وتحضير الدروس تلقائيًا وفق منصة مدرستي.</div>
+
   </div>
 
-  <!-- روابط أسفل الصفحة -->
+  <!-- روابط سفلية -->
+  <div class="footer-links">
+    <a href="https://ansarii212.github.io/Master/">الصفحة الرئيسية</a> |
+    <a href="https://ansarii212.github.io/exams/">مراجعات الاختبارات</a> |
+    <a href="https://ansarii212.github.io/cert/">شهادة التقدير</a>
+  </div>
+
+  <!-- روابط سياسة واتصال -->
   <div class="footer-links">
     <a href="privacy.html">سياسة الخصوصية</a> |
     <a href="terms.html">شروط الاستخدام</a> |
