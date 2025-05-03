@@ -1,165 +1,117 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>الصفحة الرئيسية - موقع خدمات المعلم والطالب</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>موقع خدمات المعلم والطالب</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f5f0e6;
+      font-family: 'Tahoma', sans-serif;
+      background-color: #fdfaf7;
       margin: 0;
       padding: 0;
-      color: #4b2e2e;
-      border: 10px solid #8b5e3c;
+      border: 8px solid #8B5E3C;
     }
 
     .top-nav {
-      background-color: #fff3e0;
-      padding: 15px;
-      text-align: center;
-      border-bottom: 2px solid #8b5e3c;
+      background-color: #f1ebe5;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      flex-wrap: wrap;
     }
 
-    .nav-button {
-      background-color: #8b5e3c;
-      color: white;
+    .top-nav button {
+      background-color: #8B5E3C;
       border: 2px solid white;
-      border-radius: 25px;
-      padding: 10px 20px;
-      margin: 5px;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
       font-size: 14px;
-      text-decoration: none;
-      display: inline-block;
     }
 
-    .site-title {
+    .title {
       text-align: center;
-      font-size: 28px;
-      margin: 30px auto 20px;
-      font-weight: bold;
-      background-color: #4b2e2e;
-      color: white;
-      display: inline-block;
-      padding: 10px 25px;
-      border-radius: 20px;
+      font-size: 24px;
+      margin: 20px 0 10px;
+      color: #8B5E3C;
     }
 
     .main-buttons {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 30px;
+      gap: 20px;
+      margin-bottom: 30px;
     }
 
-    .main-button {
-      background-color: #f5d7a1;
-      border: 2px solid #8b5e3c;
-      border-radius: 12px;
-      color: #4b2e2e;
-      padding: 20px;
+    .main-buttons button {
+      background-color: #8B5E3C;
+      border: 2px solid white;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 20px;
       font-size: 18px;
-      margin: 12px 0 5px;
+      cursor: pointer;
       width: 80%;
       max-width: 400px;
-      text-decoration: none;
-      text-align: center;
     }
 
-    .main-desc {
-      font-size: 13px;
+    .description {
+      text-align: center;
       color: #333;
-      margin-bottom: 10px;
-      text-align: center;
-      max-width: 400px;
+      font-size: 13px;
+      margin-top: 5px;
     }
 
-    .footer-links {
+    .footer {
       text-align: center;
       font-size: 12px;
-      margin-top: 60px;
-      margin-bottom: 30px;
-      color: #555;
+      color: #444;
+      margin: 30px 0 10px;
     }
 
-    .footer-links a {
-      color: #555;
+    .footer a {
+      color: #333;
       text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-
-    .header-links {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .header-links a {
-      font-size: 12px;
-      color: #000;
-      margin: 0 8px;
-      text-decoration: none;
-    }
-
-    .header-links a:hover {
-      text-decoration: underline;
+      margin: 0 5px;
     }
   </style>
-  <script>
-    function showAlert() {
-      alert("تنبيه: جاري تجهيز الخدمة ورفعها على الموقع");
-    }
-  </script>
 </head>
 <body>
 
-  <!-- روابط علوية -->
-  <div class="header-links">
-    <a href="https://ansarii212.github.io/Master/">الصفحة الرئيسية</a> |
-    <a href="https://ansarii212.github.io/exams/">مراجعات الاختبارات</a> |
-    <a href="https://ansarii212.github.io/cert/">شهادة التقدير</a>
-  </div>
-
-  <!-- الصف العلوي -->
   <div class="top-nav">
-    <a href="https://ansarii212.github.io/Master/" class="nav-button">الصفحة الرئيسية</a>
-    <a href="https://ansarii212.github.io/exams/" class="nav-button">خدمة مراجعات الاختبارات</a>
-    <a href="https://ansarii212.github.io/cert/" class="nav-button">خدمة إنشاء شهادات التقدير</a>
-    <a href="javascript:void(0);" onclick="showAlert()" class="nav-button">خدمة تحويل أي ملف إلى qrcode</a>
-    <a href="javascript:void(0);" onclick="showAlert()" class="nav-button">خدمة تحضير مدرستي</a>
+    <button onclick="location.href='https://ansarii212.github.io/Master/'">الصفحة الرئيسية</button>
+    <button onclick="location.href='https://ansarii212.github.io/exams/'">خدمة مراجعات الاختبارات</button>
+    <button onclick="location.href='https://ansarii212.github.io/Cert/'">خدمة إنشاء شهادات التقدير</button>
+    <button onclick="alert('تنبيه : جاري تجهيز الخدمة ورفعها على الموقع')">خدمة تحويل أي ملف إلى QR</button>
+    <button onclick="alert('تنبيه : جاري تجهيز الخدمة ورفعها على الموقع')">خدمة تحضير مدرستي</button>
   </div>
 
-  <!-- اسم الموقع -->
-  <h1 class="site-title">موقع خدمات المعلم و الطالب</h1>
+  <h2 class="title">موقع خدمات المعلم والطالب</h2>
 
-  <!-- الأزرار الرئيسية -->
   <div class="main-buttons">
-
-    <a href="https://ansarii212.github.io/exams/" class="main-button">خدمة مراجعات الاختبارات</a>
-    <div class="main-desc">أدلة شاملة ومراجعات نهائية لكل الصفوف والمواد التعليمية بطريقة منظمة وسهلة.</div>
-
-    <a href="https://ansarii212.github.io/cert/" class="main-button">خدمة إنشاء شهادات التقدير</a>
-    <div class="main-desc">أنشئ شهادة تقدير فاخرة للطلاب والطالبات والمعلمين بضغطة زر.</div>
-
-    <a href="javascript:void(0);" onclick="showAlert()" class="main-button">خدمة تحويل أي ملف إلى qrcode</a>
-    <div class="main-desc">حوّل ملفاتك وروابطك التعليمية إلى QR لمشاركتها بسهولة مع الطلاب.</div>
-
-    <a href="javascript:void(0);" onclick="showAlert()" class="main-button">خدمة تحضير مدرستي</a>
-    <div class="main-desc">خدمة قادمة لجدولة وتحضير الدروس تلقائيًا وفق منصة مدرستي.</div>
-
+    <div>
+      <button onclick="location.href='https://ansarii212.github.io/exams/'">مراجعات الاختبارات</button>
+      <div class="description">أقوى المراجعات النهائية لكل المراحل الدراسية بروابط و QR</div>
+    </div>
+    <div>
+      <button onclick="location.href='https://ansarii212.github.io/Cert/'">شهادات التقدير</button>
+      <div class="description">صمم شهادتك الخاصة باسمك وشاهد الفيديو قبل الطباعة</div>
+    </div>
+    <div>
+      <button onclick="alert('تنبيه : جاري تجهيز الخدمة ورفعها على الموقع')">تحويل الملفات إلى QR</button>
+      <div class="description">حوّل أي رابط أو ملف إلى رمز QR للتحميل والمشاركة</div>
+    </div>
+    <div>
+      <button onclick="alert('تنبيه : جاري تجهيز الخدمة ورفعها على الموقع')">تحضير مدرستي</button>
+      <div class="description">خدمة ذكية لتحضير الدروس اليومية بشكل تلقائي</div>
+    </div>
   </div>
 
-  <!-- روابط سفلية -->
-  <div class="footer-links">
-    <a href="https://ansarii212.github.io/Master/">الصفحة الرئيسية</a> |
-    <a href="https://ansarii212.github.io/exams/">مراجعات الاختبارات</a> |
-    <a href="https://ansarii212.github.io/cert/">شهادة التقدير</a>
-  </div>
-
-  <!-- روابط سياسة واتصال -->
-  <div class="footer-links">
+  <div class="footer">
     <a href="privacy.html">سياسة الخصوصية</a> |
     <a href="terms.html">شروط الاستخدام</a> |
     <a href="contact.html">اتصل بنا</a>
