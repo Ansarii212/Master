@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>موقع خدمات المعلم والطالب</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Tahoma', sans-serif;
       background-color: #fdfaf7;
@@ -17,9 +21,9 @@
       background-color: #f1ebe5;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 10px;
       padding: 10px;
-      flex-wrap: wrap;
     }
 
     .top-nav button {
@@ -30,12 +34,13 @@
       border-radius: 20px;
       cursor: pointer;
       font-size: 14px;
+      white-space: nowrap;
     }
 
     .title {
       text-align: center;
       font-size: 24px;
-      margin: 20px 0 10px;
+      margin: 20px 10px 10px;
       color: #8B5E3C;
     }
 
@@ -44,18 +49,18 @@
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      margin-bottom: 30px;
+      margin: 20px 15px 30px;
     }
 
     .main-buttons button {
       background-color: #8B5E3C;
       border: 2px solid white;
       color: white;
-      padding: 15px 25px;
+      padding: 15px 20px;
       border-radius: 20px;
       font-size: 18px;
       cursor: pointer;
-      width: 80%;
+      width: 100%;
       max-width: 400px;
     }
 
@@ -70,7 +75,7 @@
       text-align: center;
       font-size: 12px;
       color: #444;
-      margin: 30px 0 10px;
+      margin: 30px 10px 10px;
     }
 
     .footer a {
@@ -78,16 +83,42 @@
       text-decoration: none;
       margin: 0 5px;
     }
+
+    @media (max-width: 600px) {
+      .top-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .top-nav button {
+        width: 90%;
+        max-width: 300px;
+        font-size: 15px;
+      }
+
+      .main-buttons button {
+        font-size: 16px;
+        padding: 12px 15px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .footer {
+        font-size: 11px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <div class="top-nav">
     <button onclick="location.href='https://ansarii212.github.io/Master/'">الصفحة الرئيسية</button>
-    <button onclick="location.href='https://ansarii212.github.io/exams/'">خدمة مراجعات الاختبارات</button>
-    <button onclick="location.href='https://ansarii212.github.io/Cert/'">خدمة إنشاء شهادات التقدير</button>
-    <button onclick="alert('تنبيه : جاري تجهيز الخدمة ورفعها على الموقع')">خدمة تحويل أي ملف إلى QR</button>
-    <button onclick="alert('تنبيه : جاري تجهيز الخدمة ورفعها على الموقع')">خدمة تحضير مدرستي</button>
+    <button onclick="location.href='https://ansarii212.github.io/exams/'">مراجعات الاختبارات</button>
+    <button onclick="location.href='https://ansarii212.github.io/Cert/'">شهادات التقدير</button>
+    <button onclick="alert('تنبيه : جاري تجهيز الخدمة ورفعها على الموقع')">تحويل إلى QR</button>
+    <button onclick="alert('تنبيه : جاري تجهيز الخدمة ورفعها على الموقع')">تحضير مدرستي</button>
   </div>
 
   <h2 class="title">موقع خدمات المعلم والطالب</h2>
@@ -95,7 +126,7 @@
   <div class="main-buttons">
     <div>
       <button onclick="location.href='https://ansarii212.github.io/exams/'">مراجعات الاختبارات</button>
-      <div class="description">أقوى المراجعات النهائية لكل المراحل الدراسية بروابط و QR</div>
+      <div class="description">أقوى المراجعات النهائية لكل المراحل بروابط و QR</div>
     </div>
     <div>
       <button onclick="location.href='https://ansarii212.github.io/Cert/'">شهادات التقدير</button>
